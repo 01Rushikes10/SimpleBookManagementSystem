@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>Book Management Application</display-name>
+
+    <servlet>
+        <servlet-name>ListBooksServlet</servlet-name>
+        <servlet-class>com.bookmanagement.servlet.ListBooksServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListBooksServlet</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddBookServlet</servlet-name>
+        <servlet-class>com.bookmanagement.servlet.AddBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBookServlet</servlet-name>
+        <url-pattern>/add-book</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditBookServlet</servlet-name>
+        <servlet-class>com.bookmanagement.servlet.EditBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditBookServlet</servlet-name>
+        <url-pattern>/edit-book</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewBookServlet</servlet-name>
+        <servlet-class>com.bookmanagement.servlet.ViewBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewBookServlet</servlet-name>
+        <url-pattern>/view-book</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteBookServlet</servlet-name>
+        <servlet-class>com.bookmanagement.servlet.DeleteBookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteBookServlet</servlet-name>
+        <url-pattern>/delete-book</url-pattern>
+    </servlet-mapping>
+
+</web-app>
